@@ -98,4 +98,4 @@ const searchMeals = () => {
     inputField.value = ''
 }
 
-loadMealasync('Arrabiata')
+loadMealasync('fish')
