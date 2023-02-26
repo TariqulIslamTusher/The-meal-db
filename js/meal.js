@@ -21,6 +21,16 @@ const displayMeals = meals => {
     //step 1 : container element
     const mealsContainer = document.getElementById('mealsContainer')
     mealsContainer.innerHTML = ''
+
+    // display not found
+    const notFound = document.getElementById('notFound')
+    if(meals.length === 0){
+        notFound.classList.remove('d-none')
+    } else{
+        notFound.classList.add('d-none')
+    }
+
+
     meals.forEach(meal => {
         console.log(meal)
         // data distruction
